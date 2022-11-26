@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="quizStyle.css">
+</head>
+
+<body>
+  <div id="startDiv">
+    <input type="text" placeholder="Enter your Name" class="nameInp">
+    <button class="startBtn" onclick="startBtn()">Start Now</button>
+  </div>
+  <div class="dispNone" id="parent">
+    <div class="quiz-container" id="quiz">
+      <div class="header">
+        <h2 id="question">Question Text</h2>
+        <ul>
+          <li>
+            <input type="radio" name="answer" id="option1" class="answer">
+            <label for="option1" id="option1_value">Answer</label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="option2" class="answer">
+            <label for="option2" id="option2_value">Answer</label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="option3" class="answer">
+            <label for="option3" id="option3_value">Answer</label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="option4" class="answer">
+            <label for="option4" id="option4_value">Answer</label>
+          </li>
+        </ul>
+      </div>
+      <button class="btn" id="submit" disabled>Submit</button>
+    </div>
+  </div>
+
+
+  <script type="module" src="quiz.js"></script>
+</body>
+
+</html>
