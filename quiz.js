@@ -122,7 +122,7 @@ function checkAuthentication() {
         } else {
             // User is signed out
             // ...
-            window.location.href = "../login.html";
+            window.location.href = "../index.html";
         }
     })
 
@@ -176,7 +176,7 @@ window.logout = function () {
     signOut(auth)
         .then(function () {
             console.log("Logout Successfully");
-            // window.location.href = "../login.html";
+            // window.location.href = "../index.html";
         })
         .catch(function (err) {
             console.log(err);
